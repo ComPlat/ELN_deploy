@@ -1,0 +1,42 @@
+DEPENDENCIES
+  apt
+  nvm
+  phusionpassenger (~> 0.1.2)
+  postgresql
+    git: https://github.com/phlipper/chef-postgresql.git
+    revision: df0423d11db9f4cf1c66ae6d94bcde86ab32f30a
+  rvm (~> 0.9.4)
+  users
+
+GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
+  apt (2.9.2)
+  build-essential (2.4.0)
+    7-zip (>= 0.0.0)
+  chef_gem (0.1.0)
+  dmg (3.0.0)
+  git (5.0.1)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  homebrew (2.1.2)
+    build-essential (>= 2.1.2)
+  java (1.42.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
+  nvm (0.1.7)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+  phusionpassenger (0.1.2)
+  postgresql (0.16.1)
+    apt (>= 2.6.1)
+  rvm (0.9.4)
+    chef_gem (>= 0.0.0)
+    java (>= 0.0.0)
+  users (4.0.3)
+  windows (2.0.2)
+  yum (4.1.0)
+  yum-epel (0.7.1)
+    yum (>= 3.6.3)

@@ -1,0 +1,18 @@
+{
+  "build_essential": {
+    "compiletime": true
+  },
+  "postgresql": {
+    "version": "9.5"
+  },
+  "rvm": {
+    "user_installs": [{
+    "user": "dev",
+    "default_ruby": "2.3.1",
+    "rubies": ["2.3.1"]
+    }]
+  },
+  "run_list": [
+    "recipe[chemotion]"
+  ]
+}
