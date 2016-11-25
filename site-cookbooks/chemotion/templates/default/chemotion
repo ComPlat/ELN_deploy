@@ -1,0 +1,26 @@
+//TODO: remove this file or use it
+
+server {
+  listen 80 ;
+  server_name localhost 141.52.97.236;
+  root /home/dev/www/chemotion/current/public/;
+  passenger_enabled on;
+  passenger_ruby /usr/local/rvm/wrappers/ruby-2.3.1@global/ruby;
+  passenger_app_env production;
+
+  index index.html;
+
+  gzip_static on;
+  gzip_http_version 1.0;
+
+
+  # Maintenance Page
+  if (-f $document_root/system/maintenance.html) {
+      return 503;
+  }
+  error_page 503 @maintenance;
+  location @maintenance {
+      rewrite  ^(.*)$  /system/maintenance.html last;
+      break;
+  }
+}
